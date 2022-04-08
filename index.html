@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+<title>Low Carbon Eco Diet</title>
+<link rel="stylesheet" type="text/css" href="all.css">
+<script>
+  var index = 0;   //이미지에 접근하는 인덱스
+  window.onload = function(){
+      slideShow();
+  }
+  function slideShow() {
+  var i;
+  var x = document.getElementsByClassName("slide1");  //slide1에 대한 dom 참조
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";   //처음에 전부 display를 none으로 한다.
+  }
+  index++;
+  if (index > x.length) {
+      index = 1;  //인덱스가 초과되면 1로 변경
+  }
+  x[index-1].style.display = "block";  //해당 인덱스는 block으로
+  setTimeout(slideShow, 2500);
+}
+</script>
+</head>
+<body>
+  <div id="header"></div>
+  <div id="slogan1">Low Carbon Eco Diet</div>
+  <div id="slogan2">Low<br>Carbon<br>Eco Diet</div>
+  <h2>저탄소 식생활 캠페인</h2>
+  <div class="menu">
+    <div id="menu_grid" class="text_center">
+      <b><span class="each_menu">추진배경</span>
+      <span class="each_menu">추진경과</span>
+      <span class="each_menu">국내활동</span>
+      <span class="each_menu">해외활동</span>
+      <span class="each_menu">관련문의</span></b>
+    </div>
+   </div>
+  <center>
+   <div id="soil">
+     <img src="soil2.png" width="100%" height="auto">
+   </div>
+   <div class="content1">
+    <div id="first">
+      <div class="innerbox_left">
+       <img class="slide1" src="pesticide_640.jpg" style="width: 100%; height: auto;">
+       <img class="slide1" src="trucks_640.jpg" style="width: 100%; height: auto;">
+       <img class="slide1" src="waste_640.jpg" style="width: 100%; height: auto;">
+      </div>
+      <div class="innerbox_left">
+       <h3>온실가스 31%가 먹거리에서 발생</h3>
+       FAO에 따르면 전세계 온실가스의 31%가 먹거리에서 발생한다고 합니다.
+       그 중 생산부문이 42%를, 가공, 유통, 소비 등이 35%를, 토지이용이 23%를 차지한다고 합니다.
+       <br><br>
+       <div class="arrow arrow_right"></div>
+       <div class="arrow arrow_right"></div>
+       <div class="more">더 알아보기</div>
+      </div>
+    </div>
+    <div style="clear: both;"></div>
+    <div id="second">
+      <div class="innerbox_right">
+       <img src="CEO.jpg" style="width: 100%; height: auto;">
+      </div>
+      <div class="innerbox_right" style="color: white;">
+        <h3>흙의 기능을 강조한 '흙의 날' 제정</h3>
+        김춘진 aT사장이 국회의원 시절이던 2013년, 흙의 가치와 보전의 중요성을
+        강조하기 위해 '흙의 날 제정에 관한 법률'을 대표 발의했고,
+        2015년 흙의 날이 법정기념일이 되었습니다.
+        <br><br>
+        <div class="arrow arrow_right"
+          style="border: solid rgb(255, 230, 153); border-width: 0 2px 2px 0;
+          margin-bottom: 40px;"></div>
+        <div class="arrow arrow_right"
+          style="border: solid rgb(255, 230, 153); border-width: 0 2px 2px 0;
+          margin-bottom: 40px;"></div>
+        <div class="more" style="color: rgb(255, 230, 153);
+          margin-bottom: 40px;">더 알아보기</div>
+      </div>
+    </div>
+    <div style="clear: both;"></div>
+    <div style="padding-top: 20vw;">
+      <div class="innerbox_left">
+       <video controls poster="korea greenfood day.jpg" style="width: 100%;
+       height: auto;">
+         <source src="korea greenfood day.mp4" type="video/mp4">
+       </video>
+      </div>
+      <div>
+        <div class="innerbox_left">
+          <h3>코리아 그린푸드데이 추진</h3>
+          먹거리 분야의 생산-유통-소비 전 단계에서 탄소배출을 감축하자는 캠페인을
+          추진하게 되었습니다. 매월 하루, 지역에서 생산한 친환경 농산물로 만든 음식을
+          남기지 않고 먹는 캠페인입니다.
+          <br><br>
+          <div class="arrow arrow_right"></div>
+          <div class="arrow arrow_right"></div>
+          <div class="more">더 알아보기</div>
+        </div>
+      </div>
+    </div>
+  </center>
+  <div style="clear: both;"></div>
+  <div id="bottom">
+    <div style="padding-left: 6vw; padding-top: 3vw;">
+    한국농수산식품유통공사 / follow us Kakaotalk  facebook  instagram</div>
+  </div>
+</body>
+</html>
